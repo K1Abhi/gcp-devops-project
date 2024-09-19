@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: gcp-devops-gke
-          image: gcr.io/learning-devops-436103/gcpdevops
+          image: gcr.io/learning-devops-436103/gcpdevops-dev
           ports:
             - containerPort: 5000
           env:
@@ -25,7 +25,7 @@ apiVersion: "v1"
 kind: "Service"
 metadata:
   name: gcp-devosp-gke-service
-  namespace: "gcp-devops-prod"
+  namespace: "gcp-devops-dev"
   labels:
     app.kunernetes.io/managed-by: gcp-cloud-build-deploy
 spec:

@@ -15,4 +15,5 @@ steps:
     - --cluster=gcp-devops-project
     - --namespace=gcp-devops-prod
     
-logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
